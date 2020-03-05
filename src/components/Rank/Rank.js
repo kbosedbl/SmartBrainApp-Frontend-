@@ -1,16 +1,18 @@
 import React from 'react';
 //import './ImageLinkForm.css';
 
-const Rank = () =>{
+const Rank = ({name,entries}) =>{
+	console.log(name);
+	console.log(entries);
 	return (
 		<div>
-			<div className='white f3'>
-				{'kbosedbl , your current rank is...'}
-			</div>
-			<div className='white f1'>
-				{'#1'}
-			</div>	           
-		</div>
+      		<div className='white f3'>
+        		{`${name}, your current entry count is...`}
+      		</div>
+      		<div className='white f1'>
+        		{entries}
+      		</div>
+    	</div>
 	);
 }
 
